@@ -45,7 +45,7 @@ public class AnotherCron extends AbsMyCronImpl {
         cronTriggerFactoryBean.setJobDetail(anotherJobDetailFactory().getObject());
         cronTriggerFactoryBean.setCronExpression("0 0/2 * * * ?");
         cronTriggerFactoryBean.setName("AnotherCronTrigger");
-        cronTriggerFactoryBean.setGroup("JinJob");
+        cronTriggerFactoryBean.setGroup("TestJob");
         return cronTriggerFactoryBean;
     }
 

@@ -32,7 +32,7 @@ public class SimpleCron extends AbsMyCronImpl{
 
         jobDetailFactory.setJobClass(SimpleJob.class);
         jobDetailFactory.setName("SimpleCronJob");
-        jobDetailFactory.setGroup("JinJob");
+        jobDetailFactory.setGroup("TestJob");
         return jobDetailFactory;
 
     }
@@ -44,7 +44,7 @@ public class SimpleCron extends AbsMyCronImpl{
         cronTriggerFactoryBean.setJobDetail(simpleJobDetailFactory().getObject());
         cronTriggerFactoryBean.setCronExpression("0 0/1 * * * ?");
         cronTriggerFactoryBean.setName("SimpleCronTrigger");
-        cronTriggerFactoryBean.setGroup("JinJob");
+        cronTriggerFactoryBean.setGroup("TestJob");
         return cronTriggerFactoryBean;
     }
 
